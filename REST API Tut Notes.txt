@@ -1,0 +1,28 @@
+-----------------------------REST API TUTORIAL NOTES--------------------------------
+
+10-08-2022 13:14
+
+API = Apllication Programming Interface
+
+As the name suggests, an API is an interface that is used by two or more applications to talk to each other. The most common ue of an API is between a CLIENT application and a SERVER application, where the client app sends requests for data through the API which the server responds back after searching an appropiate data from its Database. This exchange  of request-response system requires sort of a "middleman" as a translator, which is the API.
+
+A front-end application can be of any type, language based or platform based, so they usually have different kinds of workings within them. This makes it difficult to configure a server to each one's specific needs. Thats why APIs are introduced between them, which either use JSON or XML format for information dump, making it a homogenous solution for all parties involved.
+
+------------------------------------------------------
+
+REST = REpresentational State Transfer
+
+APIs that follow REST architecture are called REST APIs. REST architecture is a set of commonly agreed upon guidelines that are followed while developing an API. Its main objective is to separate the client & server sides while also providing a standardised way to create and use API.
+
+The 4 main components of a REST API are :
+1) API endpoints - The actual parts of an API that help in making queries from the client side to the server side.
+2) Methods - GET-POST-PUT-DELETE : The CRUD methods that are used to access database
+3) Headers - The HTTP STATUS messages that give confirmation about execution of a query. eg. 200 OK, 404 Error etc. 
+4) Data - The data sent and recieved between client and server. JSON format is the most used.
+
+------------------------------------------------------
+
+Serializers = Serializers convert complex data type into python native datatype so that it can be rendered into Json data. The reversal of this process is called deserialization and is done by serializers too.
+
+There are two types of serializers : serializers.Serializer and serializers.ModelSerializer 
+
